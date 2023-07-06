@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import VolverBoton from './VolverBoton';
 
 const Hangman = ({handleBack}) => {
-  const words = ['GATO', 'PERRO', 'CASA', 'ARBOL']; // Palabras disponibles para el juego
+  const words = ['WATO', 'STITCH', 'PANFU', 'PULSERITAS', 'LOPIU', 'PRECIOSA', 'CHIQUITA', 'MISSU', 'BESITOUWU']; // Palabras disponibles para el juego
   const [selectedWord, setSelectedWord] = useState('');
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [currentGuess, setCurrentGuess] = useState('');
@@ -103,7 +103,7 @@ const Hangman = ({handleBack}) => {
 
   return (
     <>
-      <h2 className='texto'>Juego del Ahorcado</h2>
+      <h2 className='texto'>Adivina amor owo</h2>
 
       {selectedWord ? (
         <>
@@ -111,10 +111,11 @@ const Hangman = ({handleBack}) => {
             {renderGameStatus()}
             {renderWordDisplay()}
           </div>
-          <div className='centrar'>
+          {!gameOver && 
+          <div className='centrar2'>
             <p className='texto'>Adivina una letra:</p>
             {renderAlphabetButtons()}
-          </div>
+          </div>}
         </>
       ) : (
         <button className='btn btn-outline-pink' onClick={selectWord}>Comenzar</button>

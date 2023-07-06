@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import VolverBoton from './VolverBoton';
+import FlightAwareTracker from './FlightAwareTracker';
 
 const Countdown = ({ flights, handleBack }) => {
   const [remainingTime, setRemainingTime] = useState(null);
@@ -59,7 +60,8 @@ const Countdown = ({ flights, handleBack }) => {
           <>
             <p>Vuelo: {currentFlight.name}</p>
             <p>Tiempo restante: {formatTime(remainingTime)}</p>
-          </>
+            <FlightAwareTracker flightCode={currentFlight.flightCode}/>
+      </>
         ) : (
           <p className='m-2'>Ya arribé amorcito, enseguida te escribo uwu</p> // No hay vuelo en progreso
         )}

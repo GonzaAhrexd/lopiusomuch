@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import './App.css'
+import './vistaCelular.css'
 import Countdown from './components/Countdown'
 import LoveYou from './components/LoveYou'
 import Botones from './components/Botones'
 import Hangman from './components/Hangman'
 import MusicPlayer from './components/MusicPlayer'
-
+import Juegos from './components/Juegos'
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
   }
 
   const flights = [
-    { name: "Asunción ✈️ Madrid", flightStartTime: new Date('2023-07-05T14:02:00-03:00').getTime(), flightEndTime: new Date('2023-07-05T16:10:00-03:00').getTime() },
+    { name: "Asunción ✈️ Madrid", flightCode: 'AEA24', flightStartTime: new Date('2023-07-05T14:02:00-03:00').getTime(), flightEndTime: new Date('2023-07-07T17:50:00-03:00').getTime() },
     { name: "Asunción ✈️ Madrid", flightStartTime: new Date('2023-07-09T18:20:00-03:00').getTime(), flightEndTime: new Date('2023-07-10T06:25:00-03:00').getTime() },
     { name: "Madrid ✈️ Roma", flightStartTime: new Date('2023-07-10T13:00:00+02:00').getTime(), flightEndTime: new Date('2023-07-10T15:25:00+02:00').getTime() },
     { name: "Roma ✈️ Bologna", flightStartTime: new Date('2023-07-10T16:55:00+02:00').getTime(), flightEndTime: new Date('2023-07-10T17:50:00+02:00').getTime() },
@@ -45,7 +45,7 @@ function App() {
             <LoveYou handleBack={handleBack} />
           }
           {currentScreen == 3 &&
-            <Hangman handleBack={handleBack} />
+            <Juegos handleBack={handleBack} />
           }
 
           {currentScreen == 0 && (
