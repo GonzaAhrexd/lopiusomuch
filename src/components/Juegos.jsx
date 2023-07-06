@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Botones({handleTime, handleLove, handleJueguitos}) {
+function Juegos({handleTime, handleLove, handleJueguitos}) {
   return (
     <> 
     <button className='mb-2 btn btn-outline-pink' onClick={handleTime}>Tiempo⌛</button>
@@ -10,4 +10,4 @@ function Botones({handleTime, handleLove, handleJueguitos}) {
   )
 }
 
-export default Botones
+export default Juegos

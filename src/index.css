@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
+body{
+  font-family: 'Caprasimo', cursive;
+}
 .space {
   position: fixed;
   top: 0;
@@ -7,59 +10,34 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-image: url("./assets/Space.gif");
+  background-repeat: round;
   background-color: #000000;
   overflow: hidden;
 }
-
-/*Countdown component*/
-.contador{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 15vw;
-}
-.info{
-  color:white;
-}
-/* .btn-outline-info{
-  border-color: pink;
-  color: pink;
-  height: 100px;
-  font-size: 7vw;
-  font-family: 'Caprasimo', cursive;
-
-}
-
-.btn-outline-info:hover{
-  border-color: pink;
-  background-color: pink;
-  color: pink;
-  height: 100px;
-  font-size: 7vw;
-  font-family: 'Caprasimo', cursive;
-
-} */
-
 .btn-outline-pink {
   height: 100px;
-  font-size: 7vw;
+  font-size: 3vw;
   font-family: 'Caprasimo', cursive;
   color: #e91e63;
   background-color: transparent;
   background-image: none;
   border-color: #e91e63;
+  margin: 5px;
+  height: 100px;
 }
+
 .btn-outline-pink:hover {
   color: #fff;
   background-color: #e91e63;
   border-color: #e91e63;
 }
+
 .btn-outline-pink:focus,
 .btn-outline-pink.focus {
   box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.5);
 }
+
 .btn-outline-pink.disabled,
 .btn-outline-pink:disabled {
   color: #e91e63;
@@ -68,42 +46,191 @@
 
 
 /* Principal */
-.botones{
+.botones {
   display: flex;
   height: 100%;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  
+  align-items: center;
 }
-.backButton{
+
+.backButton {
   display: flex;
   flex: column;
   width: 100%;
 }
-.back{
+
+.back {
   width: 100%;
 }
-.apartado{
+
+.apartado {
   display: flex;
   flex-direction: column;
   height: 100%;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  text-align: justify;
 }
 
-.lovingyou{
-  margin: 15px;
+.lovingyou {
+  margin: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #e91e63;
   font-family: 'Caprasimo', cursive;
-  font-size: 5vw;
+  font-size: 2vw;
+
 }
-@keyframes starsAnimation {
-  from {
-    transform: translate(0, 0);
+
+
+.contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 15vw;
+}
+
+.info {
+  color: white;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e91e63;
+  font-size: 3vw;
+}
+
+/*Celular*/
+@media (max-width: 638px) {
+
+  /*Countdown component*/
+  .contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15vw;
   }
-  to {
-    transform: translate(-100%, -100%);
+
+  .info {
+    color: white;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e91e63;
+    font-size: 7vw;
+  }
+
+  .btn-outline-pink {
+    height: 100px;
+    font-size: 7vw;
+    font-family: 'Caprasimo', cursive;
+    color: #e91e63;
+    background-color: transparent;
+    background-image: none;
+    border-color: #e91e63;
+  }
+
+  .btn-outline-pink:hover {
+    color: #fff;
+    background-color: #e91e63;
+    border-color: #e91e63;
+  }
+
+  .btn-outline-pink:focus,
+  .btn-outline-pink.focus {
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.5);
+  }
+
+  .btn-outline-pink.disabled,
+  .btn-outline-pink:disabled {
+    color: #e91e63;
+    background-color: transparent;
+  }
+
+
+  /* Principal */
+  .texto{
+    color: #e91e63;
+    text-align: center;
+    font-size: 15vw;
+    margin-top: 5px;
+  }
+  .botones {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .backButton {
+    display: flex;
+    flex: column;
+    width: 100%;
+  }
+
+  .back {
+    width: 100%;
+  }
+
+  .apartado {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    text-align: justify;
+  }
+
+  .lovingyou {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #e91e63;
+    font-family: 'Caprasimo', cursive;
+    font-size: 5vw;
+  }
+
+  .alphabet{
+    height: 100px;
+    font-size: 7vw;
+    font-family: 'Caprasimo', cursive;
+    color: #e91e63;
+    background-color: transparent;
+    background-image: none;
+    border-color: #e91e63;
+  }
+  .alphabet:disabled{
+    border-color: transparent;
+    color: transparent;
+  }
+  .centrar{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .texto-chico{
+    color: #e91e63;
+    font-size: 6vw;
   }
 }
