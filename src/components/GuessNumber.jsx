@@ -49,7 +49,7 @@ const GuessNumber = ({handleBack}) => {
   return (
     <>
      <VolverBoton handleBack={handleBack}/>
-      <h2 className='texto'>Adivina el número amor owo</h2>
+      <h2 className='texto'>Adivina el número del 1 al 100 amor owo</h2>
       {gameOver ? (
         <>  
           <p className='texto-chico'>{message}</p>

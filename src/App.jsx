@@ -3,10 +3,7 @@ import './vistaCelular.css'
 import Countdown from './components/Countdown'
 import LoveYou from './components/LoveYou'
 import Botones from './components/Botones'
-import Hangman from './components/Hangman'
-import MusicPlayer from './components/MusicPlayer'
 import Juegos from './components/Juegos'
-
 function App() {
 
   const [currentScreen, setCurrentScreen] = useState(0)
@@ -35,6 +32,7 @@ function App() {
   return (
     <>
       <div className="space">
+  
         {currentScreen == 0 && <h1 className='texto'>Hola amorcito 😻</h1>
 }
         <div className={currentScreen == 0 ? 'botones' : 'apartado'}>
