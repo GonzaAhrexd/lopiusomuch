@@ -5,9 +5,9 @@ const FlightAwareTracker = ({ flightCode }) => {
 
   return (
     <div>
-      <p>Acá podés seguir el avión, amor, el código es {flightCode}:</p>
-      <a href={flightAwareUrl} target="_blank" rel="noopener noreferrer">
-        FlightAware - Rastrear vuelo {flightCode}
+      <p className='d-flex justify-content-center'>Vuelo: {flightCode}</p>
+      <a className='btn btn-outline-pink' href={flightAwareUrl} target="_blank" rel="noopener noreferrer">
+      Acá podés seguir el avión, preciosa 😻 
       </a>
     </div>
   );

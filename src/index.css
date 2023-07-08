@@ -151,7 +151,14 @@ body{
   color: #e91e63;
   font-size: 3vw;
 }
-
+.input-outline-pink{
+  border: 2px solid #f50057; /* Borde rosado */
+  background-color: transparent;
+  height: 12vw;
+  width: 100%;
+  color: white;
+  font-size: 10vw;
+}
 @media (max-width: 638px) {
 
   /*Countdown component*/
@@ -171,6 +178,7 @@ body{
     align-items: center;
     color: #e91e63;
     font-size: 7vw;
+    margin: 10px;
   }
 
   .btn-outline-pink {
@@ -282,5 +290,13 @@ body{
   .texto-chico{
     color: #e91e63;
     font-size: 6vw;
+  }
+  .input-outline-pink{
+    border: 2px solid #f50057; /* Borde rosado */
+    background-color: transparent;
+    height: 12vw;
+    width: 100%;
+    color: white;
+    font-size: 10vw;
   }
 }

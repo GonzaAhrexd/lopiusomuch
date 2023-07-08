@@ -58,8 +58,8 @@ const Countdown = ({ flights, handleBack }) => {
         <h2>Estado del vuelo</h2>
         {currentFlight ? (
           <>
-            <p>Vuelo: {currentFlight.name}</p>
-            <p>Tiempo restante: {formatTime(remainingTime)}</p>
+            <p> {currentFlight.name}</p>
+            <p> {formatTime(remainingTime)}</p>
             <FlightAwareTracker flightCode={currentFlight.flightCode}/>
       </>
         ) : (
